@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>خدماتنا وفروعنا | وسيطك Business Man</title>
+<meta name="description" content="خدمات وسيطك: شحن بضائع وعفش، رحلات يومية من القاهرة إلى السودان، تذاكر طيران، عمرة، تنظيف، ملحقات موبايل وتصميم.">
+<meta property="og:title" content="خدماتنا وفروعنا — وسيطك Business Man">
+<meta property="og:description" content="كل خدمات وسيطك وفروعه في القاهرة والسودان والإمارات في صفحة واحدة.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+<nav class="nav" aria-label="الأقسام">
+  <a href="index.html">← الرئيسية</a><a href="#services">الخدمات</a><a href="#branches">الفروع</a><a href="#price">سعر تذكرتك</a><a href="#code">الشفرة</a>
+</nav>
+
+<header class="hero">
+  <h1>خدماتنا وفروعنا</h1>
+  <p class="lead">وسيطك Business Man 😎 — ثقة • أمان • سرعة</p>
+  <p>من القاهرة إلى جميع ولايات السودان الحبيب 🇸🇩</p>
+  <div class="cta">
+    <a class="btn wa" data-c="cairo" data-m="wa">تواصل واتساب</a>
+    <a class="btn ghost" href="index.html#prices">شوف الأسعار</a>
+  </div>
+</header>
+
+<main>
+  <section id="services" aria-label="الخدمات">
+    <div id="chips" class="chips" role="group" aria-label="فلترة الخدمات"></div>
+    <div id="bento" class="bento"></div>
+  </section>
+
+  <section id="branches" class="panel">
+    <h2>الفروع</h2>
+    <div id="tabs" class="tabs" role="tablist" aria-label="الفروع"></div>
+    <div id="tabpanel" class="tp" role="tabpanel"></div>
+  </section>
+
+  <section id="price" class="panel">
+    <h2>اعرف سعر تذكرتك</h2>
+    <label for="dest" class="muted">الوجهة من القاهرة</label>
+    <select id="dest"></select>
+    <div id="res" class="res" hidden>
+      <p class="muted">من القاهرة إلى</p>
+      <h3 id="rName"></h3>
+      <p class="rp"><b id="rPrice"></b> جنيه مصري</p>
+      <p class="muted">تأكيد التذكرة بعربون 200 جنيه مصري فقط</p>
+      <a id="rWa" class="btn wa" target="_blank" rel="noopener noreferrer" href="#">احجز عبر واتساب</a>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>شركاؤنا</h2>
+    <ul id="partners" class="pscroll"></ul>
+  </section>
+
+  <section id="code" class="panel">
+    <div class="ticket">
+      <p>الشفرة: <b>أنا من طرف وسيطك 😎👑💪</b></p>
+      <p>اذكرها عند طلب أي خدمة وسيتم التصديق لك بالخصم 😁🤍</p>
+      <button id="copyCode" type="button">انسخ الشفرة</button>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div id="social" class="social"></div>
+  <p class="sig">تصميم: حريف بوسترات خرافية 😎🔥</p>
+  <p>للتصاميم: <a class="num" data-c="design" data-m="wa" data-show></a></p>
+  <p class="muted">قريباً: النسخة الدينية ومحتوى ديني وقصص الأنبياء 😇🤍</p>
+</footer>
+
+<div class="dock">
+  <a class="tel" data-c="cairo" data-m="tel">اتصال</a>
+  <a class="wa" data-c="cairo" data-m="wa">واتساب</a>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<noscript><p class="muted">فعّل JavaScript لعرض الخدمات وأرقام التواصل.</p></noscript>
+<script src="js/data.js"></script>
+<script src="js/services-data.js"></script>
+<script src="js/services.js"></script>
+</body>
+</html>
